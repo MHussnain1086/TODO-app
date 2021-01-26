@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="bootstrap-4.0.0\dist\css\bootstrap.css" >
+</head>
+<body>
+   <center>
+       <form>
+    <center><h1 style="padding: 25px;">My Personal Todo App</h1></center>
+  <p> <emp style="font-size: 22px; font-weight: bold;">Title: </emp><br/><input  type="text" id="title" name="title" size="30px" required></p>
+
+
+   <p><emp style="font-size: 22px; font-weight: bold; padding-top:30px" >Priority: </emp><br/><input  type="text" id="first" name="priority" size="30px" required></p>
+
+   <p><emp style="font-size: 22px; font-weight: bold; padding-top:30px" >Date: </emp><br/><input type="date" id="date"  name="date" required></p> 
+   </p>
+
+   <p>
+    <emp style="font-size: 22px; font-weight: bold; padding-top:30px" >Notes: </emp><br/><input  type="text" id="notes" name="notes" size="30px" required>
+   </p>
+
+   <p>
+    <emp style="font-size: 22px; font-weight: bold; padding-top:30px" >Completed: </emp><br/><input  type="text" id="completed" name="compeleted" size="30px"  placeholder="Optional" required>
+   </p>
+    </form>
+    <button onclick="tod()"  id="button" class="btn btn-primary">Add</button>
+</center>
+<center>
+<table border="3px" style="margin-top: 40px;" >
+    <tr>
+        <td style="padding:0px 80px 0px 80px;font-size: 20px; background-color: black;color: white;" >Title</td>
+        <td style="padding:0px 80px 0px 80px;font-size: 20px; background-color: black;color: white;">Priority</td>
+        <td style="padding:0px 80px 0px 80px;font-size: 20px; background-color: black;color: white;">Date</td>
+        <td style="padding:0px 80px 0px 80px;font-size: 20px; background-color: black;color: white;">Notes</td>
+        <td style="padding:0px 80px 0px 80px;font-size: 20px; background-color: black;color: white;">Completed</td>
+        
+    </tr>
+    <tr>
+      <td><ul id="ptitle" style="padding:0px 50px 0px 50px;font-size: 18px; background-color:rgb(240, 233, 233);color:black;"></ul></td>
+       <td><ul id="pp" style="padding:0px 100px 0px 100px;font-size: 18px; background-color:rgb(240, 233, 233);color:black;"></ul></td>
+      <td><ul id="pdate" style="padding:0px 40px 0px 40px;font-size: 18px; background-color:rgb(240, 233, 233);color:black;"></ul></td>
+       <td><ul id="pnotes" style="padding:0px 20px 0px 20px;font-size: 18px; background-color:rgb(240, 233, 233);color:black;"></ul></td>
+       <td><ul id="pcomplete" style="padding:0px 100px 0px 100px;font-size: 18px; background-color:rgb(240, 233, 233);color:black;"></ul></td>
+       
+    </tr>
+</table>
+</center>
+    <script src="script.Js"></script>
+</body>
+</html>
