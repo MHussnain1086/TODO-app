@@ -27,6 +27,7 @@
    </p>
     </form>
     <button onclick="tod()"  id="button" class="btn btn-primary">Add</button>
+    <button onclick="dele()"  id="button" class="btn btn-primary">Remove All</button>
 </center>
 <center>
 <table border="3px" style="margin-top: 40px;" >
@@ -36,14 +37,16 @@
         <td style="padding:0px 80px 0px 80px;font-size: 20px; background-color: black;color: white;">Date</td>
         <td style="padding:0px 80px 0px 80px;font-size: 20px; background-color: black;color: white;">Notes</td>
         <td style="padding:0px 80px 0px 80px;font-size: 20px; background-color: black;color: white;">Completed</td>
+        <td style="padding:0px 80px 0px 80px;font-size: 20px; background-color: black;color: white;">Action</td>
         
     </tr>
-    <tr>
+    <tr id="todo">
       <td><ul id="ptitle" style="padding:0px 50px 0px 50px;font-size: 18px; background-color:rgb(240, 233, 233);color:black;"></ul></td>
        <td><ul id="pp" style="padding:0px 100px 0px 100px;font-size: 18px; background-color:rgb(240, 233, 233);color:black;"></ul></td>
       <td><ul id="pdate" style="padding:0px 40px 0px 40px;font-size: 18px; background-color:rgb(240, 233, 233);color:black;"></ul></td>
        <td><ul id="pnotes" style="padding:0px 20px 0px 20px;font-size: 18px; background-color:rgb(240, 233, 233);color:black;"></ul></td>
        <td><ul id="pcomplete" style="padding:0px 100px 0px 100px;font-size: 18px; background-color:rgb(240, 233, 233);color:black;"></ul></td>
+       <td><ul id="paction" style="padding:0px 100px 0px 100px;font-size: 18px; background-color:rgb(240, 233, 233);color:black;"></ul></td>
        
     </tr>
 </table>

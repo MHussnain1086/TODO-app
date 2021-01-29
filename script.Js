@@ -31,13 +31,15 @@
     newItem.appendChild(text)
     document.getElementById("pdate").appendChild(newItem)
     
-    var item = document.getElementById("bi").value;
-    item.style.backgroundColor="red";
+    var item = document.getElementById("").value;
     var text = document.createTextNode(item);
-    var newItem = document.createElement("li")
+    var newItem = document.createElement("li").childElementCount("button")
     newItem.appendChild(text)
     document.getElementById("paction").appendChild(newItem)
-    
+}
+function dele(){
+   e = document.getElementsByTagName(`ul`).innerHTML = ""
+
 
 }
 
